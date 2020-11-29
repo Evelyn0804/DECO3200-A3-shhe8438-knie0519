@@ -1,0 +1,133 @@
+   /*global style*/
+   * {
+       margin: 0px;
+       padding: 0px;
+       box-sizing: border-box;
+   }
+
+   body {
+       overflow-x: hidden;
+       overflow-y: scroll;
+       background-color: #ffffff;
+   }
+
+   section {
+       position: relative;
+       overflow: hidden;
+       height: 100%
+   }
+
+   a:link {
+       text-decoration: none;
+   }
+
+   /*heading style*/
+   * {
+       font-family: muli,
+           sans-serif;
+   }
+
+   h1 {
+       font-weight: 700;
+       font-size: 36px;
+   }
+
+   h2 {
+       font-weight: 600;
+       font-size: 24px;
+   }
+
+   h3 {
+       font-weight: 600;
+       font-size: 18px;
+   }
+
+   h4 {
+       font-weight: 600;
+       font-size: 12px;
+   }
+
+
+   p {
+       font-weight: normal;
+       font-size: 18px;
+   }
+
+   canvas {
+       margin: auto;
+   }
+
+   #video_holder {
+       text-align-last: center;
+       margin: 10px;
+   }
+
+   #overlay {
+       position: absolute;
+       left: 0;
+       top: 0;
+       width: 100%;
+       height: 100%;
+       background-color: rgba(0, 0, 0, 0.5);
+       display: none;
+       align-items: center;
+       justify-content: center;
+   }
+
+   #hintboard {
+       position: fixed;
+       display: flex;
+       border-radius: 10px;
+       z-index: 100;
+       background-color: #ffffff;
+       width: 400px;
+       max-width: 80%;
+       height: auto;
+       justify-content: center;
+       text-align: center;
+       padding: 20px;
+       font-size: 36px;
+   }
+
+   #nomask {
+       font-size: 24px;
+   }
+
+   #gift {
+       width: 400px;
+       height: auto;
+       display: none;
+       margin: 20px 10px;
+       /* display: flex;
+        align-items: center; */
+   }
+
+   #button2 {
+       background-color: #CD5B54;
+       border: none;
+       color: #ffffff;
+       padding: 5px;
+       border-radius: 20px;
+       text-decoration: none;
+       width: 200px;
+       height: 50px;
+       font-size: 24px;
+       font-weight: bold;
+   }
+
+.button-list {
+    display: inline-flex;
+    justify-content: center;
+    margin: 0px;
+    width: 100%;
+    align-items: center;
+}
+
+#takephoto {
+    margin-left: 80px;
+}
+
+#revert {
+    margin-left: 60px;
+    margin-bottom: 15px;
+}

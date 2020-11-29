@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>I'm Back</title>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link href="../css/back.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,600,900&display=swap" rel="stylesheet">
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body onload="showDate()">
+    <div class="navbar">
+        <div class="nav-grid">
+            <!--logo for returning landing page-->
+            <div class="nav-menu">
+
+                <div class="nav-links">
+                    <a class="nav-item" href="#profile">Profile</a>
+                    <a class="nav-item" href="#squad">Squad</a>
+                    <a class="nav-item" href="#calender">Calender</a>
+                    <a class="nav-item" href="#map">Map</a>
+                    <a class="nav-item" href="#tips">Tips</a>
+                    <a class="nav-item" href="#setting">Setting</a>
+                </div>
+
+            </div>
+        </div>
+        <!--change to hamburger menu for mobile screen-->
+        <div class="burger-menu" onclick="showMenu()">
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+        <h2 id="date"></h2>
+        <div id="dateline"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="background">
+        <!-- title -->
+        <div id="title">
+            <h2><b>GO OUT</b></h2>
+        </div>
+        <!-- gif -->
+        <div id="gif">
+            <img src="../img/fight_background.gif" alt="Fight COVID-19" width="300px" height="auto">
+        </div>
+        <!-- progress bar -->
+        <div id="progressbar">
+            <div class="progress">
+                <div class="progress-done" data-done="60">Lv. 39</div>
+            </div>
+        </div>
+        <div id="exp">
+            <p>
+                <h4>You can now leave this app and enjoy today</h4>
+            </p>
+        </div>
+        <!-- slide to unlock -->
+        <div id="slider">
+            <input type="range" class="slideToUnlock" value="0" max="100">
+        </div>
+        <div id="slidexp">
+            <h5 style="font-family:muli;">Slide to Unlock</h5>
+        </div>
+    </div>
+
+    <!-- Take Off Overlay -->
+    <div id="takeoff" class="overlay">
+        <div class="background-small">
+            <h2 style="color:#81201d">Welcome Back!</h2>
+            <p id="text2">Take off your mask properly is the key to the victory!</p>
+
+            <div id="img-slider">
+                <img id="curr-img" src="../img/after_1.png" width="autos" height="300px">
+                <!-- left and right selection -->
+                <i id="left" class='bx bxs-chevron-left arrow-hidden'></i>
+                <i id="right" class='bx bxs-chevron-right'></i>
+                <!-- dots -->
+                <div class="overlay-dots">
+                    <div class="single-dot active"></div>
+                    <div class="single-dot"></div>
+                    <div class="single-dot"></div>
+                </div>
+            </div>
+
+            <!-- button -->
+                <button2 id="button2" type="button" onClick="achievement()">Done</button>
+        </div>
+
+    </div>
+
+    <script src="../javascript/back.js"></script>
+</body>
+
+</html>

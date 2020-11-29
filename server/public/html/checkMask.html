@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>take photo</title>
+  <script src="../javascript/libraries/p5.js"></script>
+  <script src="../javascript/libraries/p5.dom.js"></script>
+  <script src="../javascript/libraries/p5.sound.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="../javascript/canvas2image.js"></script>
+  <script src="../javascript/checkMask.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.slim.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <link href="../css/checkMask.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="body">
+  <h2 style="text-align:center; color:#6a3e3e">Please take a selfie with your mask on</h2>
+  <div id="container">
+    <div class="row">
+      <div id="overlay">
+        <div id="hintboard">
+          <div id="nomask">pop up
+          </div>
+          <div id="gift" onclick="toEditImage()">
+            <h2 style="color: #4D6803"> Succeed! <br> You got the gift!</h2><br>
+            <p style="color: #4D6803; margin-bottom:10px;">Thanks for your persistence!</p>
+            <img src="../img/gift.png" />
+            <button id="button2" onclick="toEditImage()">Claim</button>
+          </div>
+        </div>
+      </div>
+         <div id="video_holder"></div>
+<div class="button-list">
+  <p>
+  <!--Return Button-->
+  <img src="../img/return.png" onclick= "back()" style="margin-bottom: 15px;"/>
+  <!--Vertfy Button-->
+  <img id="takephoto" src="../img/takephoto.png" onclick="takePhoto()"/>
+   <!--Revert Button-->
+<img id="revert" src="../img/revert.png" onclick="takePhoto()" />
+</p>
+</div>
+</div>
+</div>
+</body>
+
+</html>

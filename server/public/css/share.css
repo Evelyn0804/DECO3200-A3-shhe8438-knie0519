@@ -1,0 +1,188 @@
+/*global style*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #ffffff;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+    height: 100%
+}
+
+/*heading style*/
+h1 {
+    font-weight: 700;
+    font-size: 36px;
+    font-family: muli,
+        sans-serif;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 5vh;
+    font-family: muli,
+        sans-serif;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 3.4vh;
+    font-family: muli,
+        sans-serif;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 3vh;
+    font-family: muli,
+        sans-serif;
+}
+
+
+
+p {
+    font-weight: normal;
+    font-size: 2.5vh;
+    font-family: muli,
+        sans-serif;
+}
+
+/* Main Content */
+.background {
+    position: relative;
+    background: #F8CFB8;
+    text-align: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    height: 650px;
+    margin: 50px 20px 20px;
+    padding:20px;
+}
+
+#date{
+    font-size: 24px;
+    color:#81201d;
+    margin-top: 20px;
+    left:70%;
+}
+
+#record{
+    display: flex;
+    color:#81201d;
+}
+#box {
+      position: absolute;
+     left:50%;
+     top:52%;
+     transform:translate(-50%, -50%);
+     -webkit-transform:translate(-50%, -50%);
+
+  }
+#title {
+    color: #81201d;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+/* share */
+.overlay {
+    opacity: 0.9;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(94, 94, 94);
+}
+
+.share,
+.overlay {
+    display: none;
+    z-index:200;
+}
+
+.show-share {
+    display: flex;
+}
+
+.button-list {
+    display: inline-flex;
+    justify-content: center;
+    margin: 0px;
+    width: 100%;
+    align-items: center;
+}
+
+#goout {
+    margin-left: 60px;
+}
+
+#sharebtn {
+    margin-left: 60px;
+}
+/* share */
+.overlay {
+    opacity: 0.9;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(94, 94, 94);
+}
+
+.share,
+.overlay {
+    display: none;
+}
+
+.show-share {
+    display: block;
+     z-index: 198;
+}
+
+.share {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 18%;
+    margin: auto;
+    width: 300px;
+    height: 490px;
+    z-index: 200;
+    padding: 1em;
+    background: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.share h3 {
+    margin: 15px 0 0 30px;
+    color: #81201d;
+}
+
+.share button {
+    background-color: #CD5B54;
+    color: white;
+    font-size: 55px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 10px;
+    z-index: 210;
+}
+
+#word {
+    font-size: 10px;
+}

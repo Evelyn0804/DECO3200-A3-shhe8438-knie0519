@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goout</title>
+
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/goout.css" />
+</head>
+
+<body onload="showDate()">
+    <div class="navbar">
+        <div class="nav-grid">
+            <!--logo for returning landing page-->
+            <div class="nav-menu">
+                <div class="nav-links">
+                    <a class="nav-item" href="#profile">Profile</a>
+                    <a class="nav-item" href="#squad">Squad</a>
+                    <a class="nav-item" href="#calender">Calender</a>
+                    <a class="nav-item" href="#map">Map</a>
+                    <a class="nav-item" href="#tips">Tips</a>
+                    <a class="nav-item" href="#setting">Setting</a>
+                </div>
+            </div>
+        </div>
+        <!--change to hamburger menu for mobile screen-->
+        <div class="burger-menu" onclick="showMenu()">
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+        <h2 id="date"></h2>
+        <div id="dateline"></div>
+    </div>
+
+    <!-- intro -->
+    <div class="background">
+        <!-- title -->
+        <div id="goout">
+            <h2>GO OUT</h2>
+        </div>
+        <!-- gif -->
+        <div id="wearmaskgif">
+            <img src="../img/wearmask_background.gif" alt="WearYourMask">
+        </div>
+
+        <div id="exp">
+            <p>Take a selfie with your mask on to get reward!</p>
+        </div>
+
+        <!-- button -->
+        <a href="../html/checkMask.html">
+            <button class="button">Check My Mask</button>
+        </a>
+
+        <div id="more">
+            <!-- Trigger the modal with a the Learn More link -->
+            <h3 data-modal-target="#modal">Learn More</h3>
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="hint-ttl">
+                <h2>Check Your Mask Before You Go Out</h2>
+            </div>
+        </div>
+        <div class="modal-body">
+           <img src="../img/notice.png" height='100px' width=auto>
+
+            <p style="margin:10px auto;"><b>Wearing a mask is the best way to prevent infection!</b> To defeat the virus, we hope you can keep
+                recording
+                your good habit of wearing a mask and invite everyone around you to join us!</p>
+            <button id="button2" closebtn>Got It!</button>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <!-- JS -->
+    <script src="../javascript/goout.js"></script>
+</body>
+
+</html>

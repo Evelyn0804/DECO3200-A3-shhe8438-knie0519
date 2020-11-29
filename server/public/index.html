@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Army of AVOID-19</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link href="css/home.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,400i,600,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body onload="showDate()">
+    <div class="navbar">
+      <div class="nav-grid">
+        <!--logo for returning landing page-->
+        <div class="nav-menu">
+          <div class="nav-links">
+            <a class="nav-item" href="#profile">Profile</a>
+            <a class="nav-item" href="#squad">Squad</a>
+            <a class="nav-item" href="#calender">Calender</a>
+            <a class="nav-item" href="#map">Map</a>
+            <a class="nav-item" href="#tips">Tips</a>
+            <a class="nav-item" href="#setting">Setting</a>
+          </div>
+        </div>
+      </div>
+      <!--change to hamburger menu for mobile screen-->
+      <div class="burger-menu" onclick="showMenu()">
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+      <h2 id="date"></h2>
+      <div id="dateline"></div>
+    </div>
+
+    <div class="homemain">
+      <h1 style="margin-bottom:10px">Hi, Steven!</h1>
+      <h3>Let's check your location info!</h3>
+    
+    <div class="information">
+        <div id="location">
+            <h2 style="float: left;margin-left:0px;"><b>Ultimo</b></h2>
+            <h5 style="float: right; font-weight:600;">change</h5>
+        </div>
+         <hr>
+        <div id="data">
+            <div id="confirmed" style="color:#AA3E01">
+            <h4 style="margin-top: 10px;">CONFIRMED</h4>
+            <h2 style="margin-top: 10px; margin-bottom: 10px;"><b>2495</b></h2>
+            <h3 style="margin-bottom: 10px;">+17</h3>
+            </div>
+            <div id="recovered" style="color: #6D9500">
+            <h4 style="margin-top: 10px;">RECOVERED</h4>
+            <h2 style="margin-top: 10px; margin-bottom: 10px;"><b>2739</b></h2>
+            <h3 style="margin-bottom: 10px;">+20</h3>
+            </div>  
+            <div id= "death">
+            <h4 style="margin-top: 10px;">DEATHS</h4>
+            <h2 style="margin-top: 10px; margin-bottom: 10px;"><b>110</b></h2>
+            <h3 style="margin-bottom: 10px;">+3</h3>
+            </div>
+        </div>    
+    </div>
+        
+    <!-- under -->
+    <div id="subtitle">
+        <h3>What is your plan for today?</h3>
+    </div>
+    
+    <div id="selections">
+    <div id="stayhome" style="float: left;">
+        <div id="sh">
+        <a href="stayhome.html">
+        <img src="img/shield.png" alt="stayhome">
+        </a>
+        </div>
+        <div id="text-sh">
+        <a href="stayhome.html" id="text-sh">
+        <h3 style="font-size: 20px;"><b>STAY HOME</b></h3>
+        <br style="height: 10px;">
+        <h4>15,000 PEOPLE</h4>
+        </a>
+        </div>
+    </div>
+    <div id="goout" style="float: right;">
+        <div id="go">
+        <a href="./html/goout.html">
+        <img src="img/sword.png" alt="goout">
+        </a>
+        </div>
+        <div id="text-go">
+        <a href="./html/goout.html" id="text-go">
+        <h3 style="font-size: 20px;"><b>GO OUT</b></h3>
+                <br>
+        <h4>2,500 PEOPLE</h4>
+        </a>
+        </div>
+    </div>
+    </div>
+    
+
+    </div>
+    <script src="../javascript/home.js"></script>
+  </body>
+</html>

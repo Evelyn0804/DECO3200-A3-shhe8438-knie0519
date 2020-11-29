@@ -1,0 +1,40 @@
+.image-canvas {
+    height: 70vh;
+}
+
+.components {
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+.components img {
+    object-fit:contain;
+    background: #DC928D;
+    border-radius: 12%;
+    margin-left: 10px;
+}
+
+.buttons {
+    height: 10vh;
+    margin-left: 5vw;
+
+}
+
+.button-list {
+    display: inline-flex;
+    justify-content: center;
+    margin: 0px;
+    width: 100%;
+    align-items: center;
+}
+
+#save{
+  margin-left: 60px;
+}
+
+#share {
+    margin-left: 60px;
+}
